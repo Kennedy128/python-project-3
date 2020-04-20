@@ -14,17 +14,17 @@ def create_credential(account_name,passkey):
     return new_credential
 def save_credential(credential):
     '''
-    function to save a credential
+    it saves an instance of credential
     '''
     credential.save_credential()
 def display_credentials():
     '''
-    function that will dispaly all the credentials
+    displays all instances of credentials
     '''
     return Credential.display_credentials()
 def del_credential(credential):
     '''
-    function that deletes a credential
+     deletes a given credential
     '''
     credential.del_credential()
 def check_existing_user(password2):
