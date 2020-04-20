@@ -82,7 +82,7 @@ def intro():
 
             save_users(create_user(f_name,s_name,password))
             print('\n')
-            print(f"⇨ Congratulations {f_name} {s_name}, you now have an account and you have succesfuly joined us \n")
+            print(f"⇨ Congrats {f_name} {s_name}, you now have an account and you have succesfuly joined us \n")
             print('\n')
         elif short_code == 'lg':
 
