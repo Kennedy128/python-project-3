@@ -11,6 +11,10 @@ class TestUser(unittest.TestCase):
          
         self.assertEqual(self.new_credential.account_name,"twitter")
         self.assertEqual(self.new_credential.passwordkey,"kennedymbithi12")
+    def test_save_credential(self):
+        
+        self.new_credential.save_credential()
+        self.assertEqual(len(Credential.credential_list),1)
         
 if __name__ == '__main__':
     unittest.main()

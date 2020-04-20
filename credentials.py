@@ -5,3 +5,6 @@ class Credential:
     def __init__(self,account_name,passwordkey):
         self.account_name = account_name
         self.passwordkey = passwordkey
+    def save_credential(self):
+        
+        Credential.credential_list.append(self)
