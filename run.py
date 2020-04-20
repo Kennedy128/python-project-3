@@ -8,7 +8,7 @@ from credentials import Credential
 
 def create_credential(account_name,passkey):
     '''
-    create a new credential instance
+    create a new instance of credentials
     '''
     new_credential = Credential(account_name,passkey)
     return new_credential

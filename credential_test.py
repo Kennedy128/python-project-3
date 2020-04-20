@@ -30,7 +30,7 @@ class TestUser(unittest.TestCase):
         
         '''
         self.new_credential.save_credential()
-        test_credential = Credential("test","0893uhjnv")
+        test_credential = Credential("test","0893kennedy")
         test_credential.save_credential()
 
         self.new_credential.delete_credential()
