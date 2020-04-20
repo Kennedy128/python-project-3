@@ -41,22 +41,22 @@ def find_account(password2):
 
 def create_user(f_name,s_name,password):
     '''
-    function to create a new user instance
+    creates a new user instance
     '''
     new_user = User(f_name,s_name,password)
     return new_user
 def save_users(user):
     '''
-    function to save the user
+    it saves the user inputed
     '''
     user.save_user()
 def display_users():
     '''
-    function that dispalys all signed up users
+    it displays all the users that have signed up
     '''
     return User.display_users()
 def intro():
-    print("Hey there! Welcome to Passcord")
+    print("Hello! Welcome to Passcord")
     print('\n')
     print("Please sign up to an account to get all the privileges offered")
     
