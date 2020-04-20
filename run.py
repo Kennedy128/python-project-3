@@ -98,7 +98,7 @@ def intro():
 
                 while True:
                     print(f"⇨ Welcome {search_account.first_name} {search_account.second_name} \n")
-                    print("⇨ cc-To create new credential, vc-To view all your credentials created, ex-exit the account,dc to delete a given credential \n ")
+                    print("⇨ cc-To create a new credential, vc-To view all your credentials created, ex-exit the account,dc to delete a given credential \n ")
                     print('-'*80)
                     short_code=input().lower()
                     if short_code == 'cc':
@@ -115,7 +115,7 @@ def intro():
                         if generate == 'g':
                             letters = string.ascii_letters + string.digits
                             gpassword = ''.join(random.choice(letters) for i in range(9))
-                            print(f"Your new generated password is: {gpassword} \n")
+                            print(f"Your new processed password is: {gpassword} \n")
                             passkey=gpassword
 
                         elif generate == 'a':
@@ -158,7 +158,7 @@ def intro():
 
             break
         else:
-            print("☹ _ I dont get that, please use these codes \n")
+            print("☹ _ I dont get that, please use these inputed codes \n")
 
 if __name__ == '__main__':
 
