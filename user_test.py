@@ -29,7 +29,7 @@ class TestUser(unittest.TestCase):
 
     def test_save_multiple_user(self):
         '''
-         tests if many users can be saved at the same time
+         checks if it can allow many user instances to be created at the same time
         '''
         self.new_user.save_user()
         test_user = User("tests","users","ken")
@@ -38,12 +38,12 @@ class TestUser(unittest.TestCase):
 
     def test_display_users(self):
         '''
-         displays all thes signed  users
+         displays all users that have registered or signed
         '''
         self.assertEqual(User.display_users(),User.user_list)
     def test_user_exist(self):
         '''
-        test to check if a user exists in the list
+        checks if a user is in the list
         '''
         self.new_user.save_user()
         test_user = User("tests","sickname","password")
