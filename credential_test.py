@@ -15,6 +15,9 @@ class TestUser(unittest.TestCase):
         
         self.new_credential.save_credential()
         self.assertEqual(len(Credential.credential_list),1)
+    def test_display_credentials(self):
+        
+        self.assertEqual(Credential.display_credentials(),Credential.credential_list)
         
 if __name__ == '__main__':
     unittest.main()

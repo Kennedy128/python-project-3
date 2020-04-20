@@ -8,3 +8,7 @@ class Credential:
     def save_credential(self):
         
         Credential.credential_list.append(self)
+    @classmethod
+    def display_credentials(cls):
+        
+        return cls.credential_list
