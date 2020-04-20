@@ -10,19 +10,19 @@ class TestUser(unittest.TestCase):
     '''
     def setUp(self):
         '''
-        Setup method to run before each test cases
+        shows the format or method that should run before each test
         '''
         self.new_user = User("Kennedy","Mbithi","Mutia2001")
     def test_init(self):
         '''
-         checks if the object is initialised properly
+         checks if the object is initialised properly using the init command
         '''
         self.assertEqual(self.new_user.first_name,"Kennedy")
         self.assertEqual(self.new_user.second_name,"Mbithi")
         self.assertEqual(self.new_user.password,"Mutia2001")
     def test_save_user(self):
         '''
-         tests if a new user created is saved
+         checks if the new user created is saved
         '''
         self.new_user.save_user()
         self.assertEqual(len(User.user_list),3)
