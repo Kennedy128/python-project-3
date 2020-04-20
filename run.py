@@ -142,10 +142,10 @@ def intro():
                             print("No match of the credential inputed")
 
                     elif short_code == 'ex':
-                        print("You have exited your account \n")
+                        print("You have executed your account \n")
                         break
             else:
-                print("The password was incorrect \n")
+                print("The password you inputed was not a match \n")
                 print('\n')
         elif short_code == 'du':
             print("Here is a displayed list of all the users\n")
@@ -154,7 +154,7 @@ def intro():
 
         elif short_code == 'ex':
 
-            print("Ok well. it was nice working with you! \n")
+            print("pleasue. it was nice working with you! \n")
 
             break
         else:
