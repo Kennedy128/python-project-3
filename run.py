@@ -107,7 +107,7 @@ def intro():
                         print("Enter account name")
                         account_name = input()
                         print("Make a password \n")
-                        print("To make your own password press- a, to generate a password press - g \n")
+                        print("To make your own password press- a, to process a password press - g \n")
                         print('-'*50)
                         generate=input()
                         print('\n')
@@ -148,7 +148,7 @@ def intro():
                 print("The password you inputed was not a match \n")
                 print('\n')
         elif short_code == 'du':
-            print("Here is a displayed list of all the users\n")
+            print("Here is a displayed list of all the users registered\n")
             for user in display_users():
                 print(f"{user.first_name} {user.second_name} \n")
 
