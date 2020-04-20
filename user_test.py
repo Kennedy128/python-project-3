@@ -5,7 +5,7 @@ from user import User
 
 class TestUser(unittest.TestCase):
     '''
-      defines the test cases for user class
+      shows the test cases for the user class
     
     '''
     def setUp(self):
